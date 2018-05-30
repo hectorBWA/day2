@@ -80,6 +80,19 @@ interface Stuff {
 
 }
 
+module Shapes {
+  class Rectangle{
+    // constructor(height: number, width: number){
+    //   this.height = height;
+    //   this.width = width;
+    // }
+
+    constructor(public height: number, public width: number){}
+   
+  }
+   const rect = new Rectangle(10, 4);
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
