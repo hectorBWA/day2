@@ -73,6 +73,13 @@ class Employee {
 }
 
 
+// interfaces
+interface Stuff {
+  name: string;
+  age: number;
+
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -81,9 +88,15 @@ class Employee {
 export class AppComponent implements OnInit {
   title = 'app works!';
 
+
+  
   ngOnInit() {
     // this.classTesting();
     // this.animalClassTesting();
+    const positions: number[] = [234, 245, 23, 534];
+    const colors: string[] = ["red", "bliue", "green", "yellow"];
+    console.log();
+    console.log();
   }
 
   classTesting(){
@@ -114,5 +127,9 @@ export class AppComponent implements OnInit {
     console.log(user);
     
 
+  }
+
+  interfaceTesting(x: stuff){
+    console.log(`${x.name} is ${x.age} years old and works in ${x.department}.`)
   }
 }
